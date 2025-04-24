@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Outfit:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Righteous&display=swap');
+
+h1{
+  font-family: "Righteous";
+}
+
+h2 {
+  font-family: "Almarai";
+}
+
+p{font-family: "Outfit";}
+
