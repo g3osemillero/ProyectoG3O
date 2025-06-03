@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="icon" href="../static/images/G3O.svg" type="image/png" />
+    <title>Investigadores G3O</title>
+  </head>
+  <body>
+    <header
+      id="navbar"
+      class="fixed top-0 left-0 right-0 bg-[#426E86] shadow-md z-50 transition-transform duration-300"
+    >
+      <div
+        class="container mx-auto px-4 py-4 flex justify-between items-center text-[#F8F1E5]"
+      >
+        <h1 class="text-2xl font-bold">
+          Geodesia Satelital, Geofísica y Gestión del Riesgo
+        </h1>
+        <nav class="space-x-4 text-lg">
+          <a
+            href="#"
+            class="inline-block px-3 py-1 rounded border border-transparent text-[#F8F1E5] bg-transparent hover:border-[#F8F1E5] hover:bg-white/10 transition delay-50 duration-200 ease-in-out hover:-translate-y-1 hover:scale-110"
+            >Inicio</a
+          >
+
+          <a
+            href="#"
+            class="inline-block px-3 py-1 rounded border border-transparent text-[#F8F1E5] bg-transparent hover:border-[#F8F1E5] hover:bg-white/10 transition delay-50 duration-200 ease-in-out hover:-translate-y-1 hover:scale-110"
+            >¿Quiénes Somos?</a
+          >
+
+          <a
+            href="../templates/Investigadores.html"
+            class="inline-block px-3 py-1 rounded border border-transparent text-[#F8F1E5] bg-transparent hover:border-[#F8F1E5] hover:bg-white/10 transition delay-50 duration-200 ease-in-out hover:-translate-y-1 hover:scale-110"
+            >Investigadores</a
+          >
+
+          <a
+            href="#"
+            class="inline-block px-3 py-1 rounded border border-transparent text-[#F8F1E5] bg-transparent hover:border-[#F8F1E5] hover:bg-white/10 transition delay-50 duration-200 ease-in-out hover:-translate-y-1 hover:scale-110"
+            >Proyectos</a
+          >
+
+          <a
+            href="../templates/LinksRelacionados.html"
+            class="inline-block px-3 py-1 rounded border border-transparent text-[#F8F1E5] bg-transparent hover:border-[#F8F1E5] hover:bg-white/10 transition delay-50 duration-200 ease-in-out hover:-translate-y-1 hover:scale-110"
+            >Links</a
+          >
+        </nav>
+      </div>
+    </header>
+    <!--#F9BA32, #426E86, #F8F1E5, #2F3131, #800000--->
+    <div id="contendor-ppal" class="h-full">
+      <!-- Contenido principal -->
+      <div
+        id="container-texto"
+        class="flex-1 bg-[#2F3131] border-b-10 border-[#800000]"
+      >
+        <div class="bg-[#426E86] p-15 border-b-10 border-[#800000]">
+          <p
+            id="titulo-inicio"
+            class="text-8xl text-center text-[#F8F1E5] underline decoration-[#F9BA32] font-bold pt-15"
+          >
+            Investigadores
+          </p>
+        </div>
+        <div class="container mx-auto px-8">
+          <section id="IngCatastralGeodesia" class="mb-15">
+            <h2
+              id="que-es"
+              class="text-6xl font-bold mt-15 text-right text-[#F8F1E5]"
+            ></h2>
+            <p class="text-3xl pb-20 mt-15 text-right text-[#F8F1E5]">
+              Para el periodo 2025-1 se cuenta con un total de x investigadores
+              dentro del semillero, recuerda que para participar en el semillero
+              unicamente debes estar interesado en unirte a nosotros. Los
+              investigadores los veras en la siguiente presentación con cada
+              unos pocos datos para que nos conozcas. Actualmente el semillero
+              se encuentra en un proceso de cambio por lo tanto es posible que
+              algunas de las personas que veas no se encuentren o hayan
+              desertado el semillero por motivos desconocidos.
+            </p>
+            <div class="relative w-full">
+              <!-- Contenedor del slider -->
+              <div
+                class="grid grid-cols-3 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6"
+              >
+                <!-- Tarjeta -->
+                <div
+                  class="relative group h-100 w-100 overflow-hidden rounded-lg shadow-lg transform transition duration-300 hover:scale-110 hover:-translate-y-1"
+                >
+                  <!-- Imagen de fondo -->
+                  <img
+                    src="https://via.placeholder.com/300x200"
+                    alt="Imagen 1"
+                    class="w-full h-full object-cover"
+                  />
+
+                  <!-- Overlay informativo -->
+                  <div
+                    class="absolute inset-0 bg-black/70 text-white flex items-center justify-center px-4 transition-all duration-300 translate-x-full group-hover:translate-x-0"
+                  >
+                    <p class="text-lg">Texto informativo de la tarjeta</p>
+                  </div>
+                </div>
+
+                <!-- Tarjeta -->
+                <div
+                  class="relative group h-100 w-100 overflow-hidden rounded-lg shadow-lg transform transition duration-300 hover:scale-110 hover:-translate-y-1"
+                >
+                  <!-- Imagen de fondo -->
+                  <img
+                    src="https://via.placeholder.com/300x200"
+                    alt="Imagen 2"
+                    class="w-full h-full object-cover"
+                  />
+
+                  <!-- Overlay informativo -->
+                  <div
+                    class="absolute inset-0 bg-black/70 text-white flex items-center justify-center px-4 transition-all duration-300 translate-x-full group-hover:translate-x-0"
+                  >
+                    <p class="text-lg">Texto informativo de la tarjeta 2</p>
+                  </div>
+                </div>
+
+                <!-- Tarjeta -->
+                <div
+                  class="relative group h-100 w-100 overflow-hidden rounded-lg shadow-lg transform transition duration-300 hover:scale-110 hover:-translate-y-1"
+                >
+                  <!-- Imagen de fondo -->
+                  <img
+                    src="https://via.placeholder.com/300x200"
+                    alt="Imagen 3"
+                    class="w-full h-full object-cover"
+                  />
+
+                  <!-- Overlay informativo -->
+                  <div
+                    class="absolute inset-0 bg-black/70 text-white flex items-center justify-center px-4 transition-all duration-300 translate-x-full group-hover:translate-x-0"
+                  >
+                    <p class="text-lg">Texto informativo de la tarjeta 3</p>
+                  </div>
+                </div>
+
+                <!-- Repite hasta tener 9 celdas -->
+                <div
+                  class="relative group h-100 w-100 overflow-hidden rounded-lg shadow-lg transform transition duration-300 hover:scale-110 hover:-translate-y-1"
+                >
+                  <!-- Imagen de fondo -->
+                  <img
+                    src="https://via.placeholder.com/300x200"
+                    alt="Imagen 4"
+                    class="w-full h-full object-cover"
+                  />
+
+                  <!-- Overlay informativo -->
+                  <div
+                    class="absolute inset-0 bg-black/70 text-white flex items-center justify-center px-4 transition-all duration-300 translate-x-full group-hover:translate-x-0"
+                  >
+                    <p class="text-lg">Texto informativo de la tarjeta 4</p>
+                  </div>
+                </div>
+
+                <div
+                  class="relative group h-100 w-100 overflow-hidden rounded-lg shadow-lg transform transition duration-300 hover:scale-110 hover:-translate-y-1"
+                >
+                  <!-- Imagen de fondo -->
+                  <img
+                    src="https://via.placeholder.com/300x200"
+                    alt="Imagen 5"
+                    class="w-full h-full object-cover"
+                  />
+
+                  <!-- Overlay informativo -->
+                  <div
+                    class="absolute inset-0 bg-black/70 text-white flex items-center justify-center px-4 transition-all duration-300 translate-x-full group-hover:translate-x-0"
+                  >
+                    <p class="text-lg">Texto informativo de la tarjeta 5</p>
+                  </div>
+                </div>
+
+                <div
+                  class="relative group h-100 w-100 overflow-hidden rounded-lg shadow-lg transform transition duration-300 hover:scale-110 hover:-translate-y-1"
+                >
+                  <!-- Imagen de fondo -->
+                  <img
+                    src="https://via.placeholder.com/300x200"
+                    alt="Imagen 6"
+                    class="w-full h-full object-cover"
+                  />
+
+                  <!-- Overlay informativo -->
+                  <div
+                    class="absolute inset-0 bg-black/70 text-white flex items-center justify-center px-4 transition-all duration-300 translate-x-full group-hover:translate-x-0"
+                  >
+                    <p class="text-lg">Texto informativo de la tarjeta 6</p>
+                  </div>
+                </div>
+
+                <div
+                  class="relative group h-100 w-100 overflow-hidden rounded-lg shadow-lg transform transition duration-300 hover:scale-110 hover:-translate-y-1"
+                >
+                  <!-- Imagen de fondo -->
+                  <img
+                    src="https://via.placeholder.com/300x200"
+                    alt="Imagen 7"
+                    class="w-full h-full object-cover"
+                  />
+
+                  <!-- Overlay informativo -->
+                  <div
+                    class="absolute inset-0 bg-black/70 text-white flex items-center justify-center px-4 transition-all duration-300 translate-x-full group-hover:translate-x-0"
+                  >
+                    <p class="text-lg">Texto informativo de la tarjeta 7</p>
+                  </div>
+                </div>
+
+                <div
+                  class="relative group h-100 w-100 overflow-hidden rounded-lg shadow-lg transform transition duration-300 hover:scale-110 hover:-translate-y-1"
+                >
+                  <!-- Imagen de fondo -->
+                  <img
+                    src="https://via.placeholder.com/300x200"
+                    alt="Imagen 8"
+                    class="w-full h-full object-cover"
+                  />
+
+                  <!-- Overlay informativo -->
+                  <div
+                    class="absolute inset-0 bg-black/70 text-white flex items-center justify-center px-4 transition-all duration-300 translate-x-full group-hover:translate-x-0"
+                  >
+                    <p class="text-lg">Texto informativo de la tarjeta 8</p>
+                  </div>
+                </div>
+
+                <div
+                  class="relative group h-100 w-100 overflow-hidden rounded-lg shadow-lg transform transition duration-300 hover:scale-110 hover:-translate-y-1"
+                >
+                  <!-- Imagen de fondo -->
+                  <img
+                    src="https://via.placeholder.com/300x200"
+                    alt="Imagen 9"
+                    class="w-full h-full object-cover"
+                  />
+
+                  <!-- Overlay informativo -->
+                  <div
+                    class="absolute inset-0 bg-black/70 text-white flex items-center justify-center px-4 transition-all duration-300 translate-x-full group-hover:translate-x-0"
+                  >
+                    <p class="text-lg">Texto informativo de la tarjeta 9</p>
+                  </div>
+                </div>
+
+                <div
+                  class="relative group h-100 w-100 overflow-hidden rounded-lg shadow-lg transform transition duration-300 hover:scale-110 hover:-translate-y-1"
+                >
+                  <!-- Imagen de fondo -->
+                  <img
+                    src="https://via.placeholder.com/300x200"
+                    alt="Imagen 10"
+                    class="w-full h-full object-cover"
+                  />
+
+                  <!-- Overlay informativo -->
+                  <div
+                    class="absolute inset-0 bg-black/70 text-white flex items-center justify-center px-4 transition-all duration-300 translate-x-full group-hover:translate-x-0"
+                  >
+                    <p class="text-lg">Texto informativo de la tarjeta 10</p>
+                  </div>
+                </div>
+
+                <div
+                  class="relative group h-100 w-100 overflow-hidden rounded-lg shadow-lg transform transition duration-300 hover:scale-110 hover:-translate-y-1"
+                >
+                  <!-- Imagen de fondo -->
+                  <img
+                    src="https://via.placeholder.com/300x200"
+                    alt="Imagen 11"
+                    class="w-full h-full object-cover"
+                  />
+
+                  <!-- Overlay informativo -->
+                  <div
+                    class="absolute inset-0 bg-black/70 text-white flex items-center justify-center px-4 transition-all duration-300 translate-x-full group-hover:translate-x-0"
+                  >
+                    <p class="text-lg">Texto informativo de la tarjeta 11</p>
+                  </div>
+                </div>
+
+                <div
+                  class="relative group h-100 w-100 overflow-hidden rounded-lg shadow-lg transform transition duration-300 hover:scale-110 hover:-translate-y-1"
+                >
+                  <!-- Imagen de fondo -->
+                  <img
+                    src="https://via.placeholder.com/300x200"
+                    alt="Imagen 12"
+                    class="w-full h-full object-cover"
+                  />
+
+                  <!-- Overlay informativo -->
+                  <div
+                    class="absolute inset-0 bg-black/70 text-white flex items-center justify-center px-4 transition-all duration-300 translate-x-full group-hover:translate-x-0"
+                  >
+                    <p class="text-lg">Texto informativo de la tarjeta 12</p>
+                  </div>
+                </div>
+
+                <div
+                  class="relative group h-100 w-100 overflow-hidden rounded-lg shadow-lg transform transition duration-300 hover:scale-110 hover:-translate-y-1"
+                >
+                  <!-- Imagen de fondo -->
+                  <img
+                    src="https://via.placeholder.com/300x200"
+                    alt="Imagen 13"
+                    class="w-full h-full object-cover"
+                  />
+
+                  <!-- Overlay informativo -->
+                  <div
+                    class="absolute inset-0 bg-black/70 text-white flex items-center justify-center px-4 transition-all duration-300 translate-x-full group-hover:translate-x-0"
+                  >
+                    <p class="text-lg">Texto informativo de la tarjeta 13</p>
+                  </div>
+                </div>
+
+                <div
+                  class="relative group h-100 w-100 overflow-hidden rounded-lg shadow-lg transform transition duration-300 hover:scale-110 hover:-translate-y-1"
+                >
+                  <!-- Imagen de fondo -->
+                  <img
+                    src="https://via.placeholder.com/300x200"
+                    alt="Imagen 14"
+                    class="w-full h-full object-cover"
+                  />
+
+                  <!-- Overlay informativo -->
+                  <div
+                    class="absolute inset-0 bg-black/70 text-white flex items-center justify-center px-4 transition-all duration-300 translate-x-full group-hover:translate-x-0"
+                  >
+                    <p class="text-lg">Texto informativo de la tarjeta 14</p>
+                  </div>
+                </div>
+
+                <div
+                  class="relative group h-100 w-100 overflow-hidden rounded-lg shadow-lg transform transition duration-300 hover:scale-110 hover:-translate-y-1"
+                >
+                  <!-- Imagen de fondo -->
+                  <img
+                    src="https://via.placeholder.com/300x200"
+                    alt="Imagen 15"
+                    class="w-full h-full object-cover"
+                  />
+
+                  <!-- Overlay informativo -->
+                  <div
+                    class="absolute inset-0 bg-black/70 text-white flex items-center justify-center px-4 transition-all duration-300 translate-x-full group-hover:translate-x-0"
+                  >
+                    <p class="text-lg">Texto informativo de la tarjeta 15</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <footer style="background-color:#222; color:#eee; padding:20px 0; text-align:center; font-family:Arial, sans-serif;">
+      <div style="max-width:1200px; margin:0 auto; padding:0 15px;">
+        <p>&copy; 2025 Semillero Geodesia Satelital, Geofísica y Gestión del Riesgo.</p>
+        <p>Todos los derechos reservados.</p>
+        <nav style="margin:10px 0;">
+          <a href="../templates/IngCatastralyGeodesia.html" style="color:#aaa; margin: 0 10px; text-decoration:none;">Ingeniería	Catastral y Geodesia</a> |
+          <a href="#" style="color:#aaa; margin: 0 10px; text-decoration:none;">Normativa y Estatutos</a> |
+          <a href="../templates/contacto.html" style="color:#aaa; margin: 0 10px; text-decoration:none;" target="_blank">Contacto</a>
+        </nav>
+        <p style="font-size:0.9em; color:#666;">Diseñado con ❤️ por Alejandra Bocanegra, Mariana Bocanegra y Samuel Calderon</p>
+      </div>
+    </footer>
+    <script module="module" src="../static/js/app.js"></script>
+    <script>
+      let lastScrollTop = 0;
+      const navbar = document.getElementById("navbar");
+
+      window.addEventListener("scroll", function () {
+        let scrollTop =
+          window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > lastScrollTop) {
+          // Scrolling down
+          navbar.style.transform = "translateY(-100%)";
+        } else {
+          // Scrolling up
+          navbar.style.transform = "translateY(0)";
+        }
+        lastScrollTop = scrollTop;
+      });
+    </script>
+  </body>
+</html>
