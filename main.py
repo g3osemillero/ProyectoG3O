@@ -20,5 +20,9 @@ def links():
 def ingCat():
     return render_template("IngCatastralyGeodesia.html", title = "Ingenieria Catastral y Geodesia")
 
+@app.route("/Contacto")
+def contacto():
+    return render_template("contacto.html", title = "Contacto")
+
 if __name__ == "__main__":
     app.run(debug=True)

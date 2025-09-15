@@ -10,6 +10,12 @@
 h2 {
   font-family: "Almarai";
 }
+
 p {
   font-family: "Outfit";
+}
+
+#fondoC {
+  background: url("../images/imgDron.JPG") no-repeat center center fixed;
+  background-size: cover;
 }
