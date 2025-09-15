@@ -1,6 +1,12 @@
 from flask import Flask, render_template
+from pathlib import Path
 
-app = Flask(__name__, static_folder="static", template_folder="templates")
+BASE_DIR = Path(__file__).resolve().parent
+app = Flask(
+    __name__,
+    static_folder=str(BASE_DIR / "static"),
+    template_folder=str(BASE_DIR / "templates"),
+)
 
 @app.route("/")
 def home():
