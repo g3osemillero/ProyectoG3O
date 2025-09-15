@@ -21,31 +21,19 @@
         </h1>
         <nav class="space-x-4 text-lg">
           <a
-            href="#"
+            href="{{ url_for('home') }}"
             class="inline-block px-3 py-1 rounded border border-transparent text-[#F8F1E5] bg-transparent hover:border-[#F8F1E5] hover:bg-white/10 transition delay-50 duration-200 ease-in-out hover:-translate-y-1 hover:scale-110"
             >Inicio</a
           >
 
           <a
-            href="../templates/quienesSomos.html"
-            class="inline-block px-3 py-1 rounded border border-transparent text-[#F8F1E5] bg-transparent hover:border-[#F8F1E5] hover:bg-white/10 transition delay-50 duration-200 ease-in-out hover:-translate-y-1 hover:scale-110"
-            >¿Quiénes Somos?</a
-          >
-
-          <a
-            href="../templates/Investigadores.html"
-            class="inline-block px-3 py-1 rounded border border-transparent text-[#F8F1E5] bg-transparent hover:border-[#F8F1E5] hover:bg-white/10 transition delay-50 duration-200 ease-in-out hover:-translate-y-1 hover:scale-110"
-            >Investigadores</a
-          >
-
-          <a
             href="#"
             class="inline-block px-3 py-1 rounded border border-transparent text-[#F8F1E5] bg-transparent hover:border-[#F8F1E5] hover:bg-white/10 transition delay-50 duration-200 ease-in-out hover:-translate-y-1 hover:scale-110"
-            >Proyectos</a
+            >Publicaciones</a
           >
 
           <a
-            href="../templates/LinksRelacionados.html"
+            href="{{ url_for('links') }}"
             class="inline-block px-3 py-1 rounded border border-transparent text-[#F8F1E5] bg-transparent hover:border-[#F8F1E5] hover:bg-white/10 transition delay-50 duration-200 ease-in-out hover:-translate-y-1 hover:scale-110"
             >Links</a
           >
@@ -62,7 +50,7 @@
         <div class="bg-[#426E86] p-15 border-b-10 border-[#800000]">
           <p
             id="titulo-inicio"
-            class="text-8xl text-center text-[#F8F1E5] underline decoration-[#F9BA32] font-bold pt-15"
+            class="text-8xl text-center text-[#F8F1E5] underline decoration-[#F9BA32] font-bold pt-10"
           >
             ¿Quienes Somos?
           </p>
@@ -73,21 +61,25 @@
             class="mb-15 border-b-10 border-[#6b8e23]"
           >
             <p class="text-3xl mt-15 mb-10 text-[#F8F1E5]">
-              El semillero constituye un espacio dedicado a los estudiantes de
-              la Universidad Distrital Francisco José de Caldas, orientado a
-              fomentar la investigación y la enseñanza en ciencias de la Tierra.
-              Sus líneas principales incluyen la geodesia satelital, los métodos
-              de introspección geofísica y la gestión del riesgo, promoviendo el
+              El semillero de Geodesia Satelital, Geofísica y Gestión del Riesgo
+              constituye un espacio dedicado a los estudiantes de la Universidad
+              Distrital Francisco José de Caldas, orientado a fomentar la
+              investigación y la enseñanza en ciencias de la Tierra. Sus líneas
+              principales incluyen la geodesia satelital, los métodos de
+              introspección geofísica y la gestión del riesgo, promoviendo el
               desarrollo académico y científico en estas áreas.
             </p>
+            <img
+              src="../static/images/Imagen de WhatsApp 2025-09-14 a las 22.31.07_3b35ec25.jpg"
+              class="w-190 float-right border-4 border-[#800000] h-auto m-5 rounded-xl shadow-lg transition-all duration-300 ease-in-out hover:w-200 hover:border-8 hover:border-[#f8f1e5] hover:shadow-2xl"
+            />
+
             <p class="text-3xl mb-10 text-[#F8F1E5]">
-              Para el periodo 2025-1, el semillero cuenta con
-              <strong>x</strong> integrantes, cuyos datos pueden consultarse en
-              la sección de investigadores. En los últimos años, hemos alcanzado
-              importantes avances, destacando la incorporación de miembros a la
-              sección de Geodesia del Instituto Geográfico Agustín Codazzi. Esto
-              consolida al semillero como un espacio de oportunidades y conexión
-              para los estudiantes interesados en participar activamente.
+              En los últimos años, hemos alcanzado importantes avances,
+              destacando la incorporación de miembros a la sección de Geodesia
+              del Instituto Geográfico Agustín Codazzi. Esto consolida al
+              semillero como un espacio de oportunidades y conexión para los
+              estudiantes interesados en participar activamente.
             </p>
             <p class="text-3xl mb-10 text-[#F8F1E5]">
               Nuestro trabajo se basa en la colaboración interdisciplinaria,
@@ -203,7 +195,7 @@
         <p>Todos los derechos reservados.</p>
         <nav style="margin: 10px 0">
           <a
-            href="../templates/IngCatastralyGeodesia.html"
+            href="{{ url_for('ingCat') }}"
             style="color: #aaa; margin: 0 10px; text-decoration: none"
             >Ingeniería Catastral y Geodesia</a
           >

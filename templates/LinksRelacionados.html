@@ -21,31 +21,19 @@
         </h1>
         <nav class="space-x-4 text-lg">
           <a
-            href="#"
+            href="{{ url_for('home') }}"
             class="inline-block px-3 py-1 rounded border border-transparent text-[#F8F1E5] bg-transparent hover:border-[#F8F1E5] hover:bg-white/10 transition delay-50 duration-200 ease-in-out hover:-translate-y-1 hover:scale-110"
             >Inicio</a
           >
 
           <a
-            href="../templates/quienesSomos.html"
-            class="inline-block px-3 py-1 rounded border border-transparent text-[#F8F1E5] bg-transparent hover:border-[#F8F1E5] hover:bg-white/10 transition delay-50 duration-200 ease-in-out hover:-translate-y-1 hover:scale-110"
-            >¿Quiénes Somos?</a
-          >
-
-          <a
-            href="../templates/Investigadores.html"
-            class="inline-block px-3 py-1 rounded border border-transparent text-[#F8F1E5] bg-transparent hover:border-[#F8F1E5] hover:bg-white/10 transition delay-50 duration-200 ease-in-out hover:-translate-y-1 hover:scale-110"
-            >Investigadores</a
-          >
-
-          <a
             href="#"
             class="inline-block px-3 py-1 rounded border border-transparent text-[#F8F1E5] bg-transparent hover:border-[#F8F1E5] hover:bg-white/10 transition delay-50 duration-200 ease-in-out hover:-translate-y-1 hover:scale-110"
-            >Proyectos</a
+            >Publicaciones</a
           >
 
           <a
-            href="../templates/LinksRelacionados.html"
+            href="{{ url_for('links') }}"
             class="inline-block px-3 py-1 rounded border border-transparent text-[#F8F1E5] bg-transparent hover:border-[#F8F1E5] hover:bg-white/10 transition delay-50 duration-200 ease-in-out hover:-translate-y-1 hover:scale-110"
             >Links</a
           >
@@ -62,7 +50,7 @@
         <div class="bg-[#426E86] p-15 border-b-10 border-[#800000]">
           <p
             id="titulo-inicio"
-            class="text-8xl text-center text-[#F8F1E5] underline decoration-[#F9BA32] font-bold pt-15"
+            class="text-8xl text-center text-[#F8F1E5] underline decoration-[#F9BA32] font-bold pt-10"
           >
             Links Relacionados
           </p>
@@ -280,7 +268,7 @@
         <p>Todos los derechos reservados.</p>
         <nav style="margin: 10px 0">
           <a
-            href="../templates/IngCatastralyGeodesia.html"
+            href="{{ url_for('ingCat') }}"
             style="color: #aaa; margin: 0 10px; text-decoration: none"
             >Ingeniería Catastral y Geodesia</a
           >
