@@ -1,11 +1,71 @@
-@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
-/*TITULOS */
-@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap");
-/*SUBTITULOS */
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
-/*PARRAFO*/
-@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
-/*NOTAS*/
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap"); /*TITULOS */
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap"); /*SUBTITULOS */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"); /*PARRAFO*/
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"); /*NOTAS*/
+
+:root {
+  --primary-color: #2f3131;
+  --second-color: #426e86;
+  --third-color: #f8f1e5;
+  --fourth-color: #f9ba32;
+  --fifth-color: #800000;
+  --sixth-color: #6b8e23;
+  --seventh-color: #aaa;
+  --eigth-color: #666;
+  --nineth-color: #eee;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: var(--primary-color);
+}
+
+/* ---------------------- BARRA DE NAVEGACIÓN ------------------------ */
+nav {
+  background-color: var(--second-color);
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0 5em;
+  padding: 0;
+  font-family: "Outfit";
+}
+nav li {
+  display: flex;
+  align-items: center;
+}
+nav .home-link {
+  display: inline-block;
+  line-height: 1.1;
+  margin-right: auto;
+}
+nav a {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--third-color);
+  padding: 1em 2em;
+  transition: opacity 150ms ease;
+  font-size: 1.25em;
+}
+nav:hover a {
+  opacity: 0.5; /* todos se apagan */
+}
+nav a:hover {
+  opacity: 1;
+}
+nav .home-link a {
+  opacity: 1 !important;
+  pointer-events: none;
+  cursor: default;
+}
 
 #titulo-inicio {
   font-family: "Righteous";
