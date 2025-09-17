@@ -13,6 +13,8 @@
   --seventh-color: #aaa;
   --eigth-color: #666;
   --nineth-color: #eee;
+  --tile: 50px; /* opcional, matchea con TILE_SIZE del JS */
+  --fade: 96px; /* si usas el mask */
 }
 * {
   margin: 0;
@@ -27,6 +29,11 @@ body {
 
 /* ---------------------- BARRA DE NAVEGACIÓN ------------------------ */
 nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  border-bottom: 4px solid var(--fifth-color);
   background-color: var(--second-color);
 }
 nav ul {
@@ -56,7 +63,7 @@ nav a {
   font-size: 1.25em;
 }
 nav:hover a {
-  opacity: 0.5; /* todos se apagan */
+  opacity: 0.5;
 }
 nav a:hover {
   opacity: 1;
@@ -65,21 +72,224 @@ nav .home-link a {
   opacity: 1 !important;
   pointer-events: none;
   cursor: default;
+  align-items: center;
 }
-
-#titulo-inicio {
+nav .material-icons {
+  font-size: 48px;
+  color: var(--third-color);
+}
+button .material-icons {
+  font-size: 2.5em;
+  color: var(--third-color);
+}
+#open-sidebar-button {
+  display: none;
+  background: none;
+  border: none;
+  padding: 1em;
+  margin-left: auto;
+  cursor: pointer;
+}
+#close-sidebar-button {
+  display: none;
+  background: none;
+  border: none;
+  padding: 1em;
+  cursor: pointer;
+}
+/* --------------------- BODY -----------------------------*/
+.main-text {
+  color: var(--third-color);
+  margin: 8em;
+}
+h1.ppal-title {
+  font-size: 12em;
   font-family: "Righteous";
+  text-align: center;
+  color: var(--third-color);
 }
-
+h1 {
+  font-size: 10em;
+  font-family: "Righteous";
+  text-align: center;
+}
 h2 {
-  font-family: "Almarai";
+  text-align: right;
+  font-size: 5em;
+  font-family: "Righteous";
+  text-decoration: underline; /* activa subrayado */
+  text-decoration-color: var(--fourth-color); /* color del subrayado */
+  text-decoration-thickness: 4px; /* grosor */
+  text-underline-offset: 4px;
+  margin-bottom: 0.5em;
 }
-
 p {
   font-family: "Outfit";
+  font-size: 2em;
+  line-height: 1.5;
+  margin-bottom: 1.2em;
 }
-
+.satelital {
+  margin-top: 4em;
+}
+.geofisica {
+  margin-top: 4em;
+}
+.gestion-riesgo {
+  margin-top: 4em;
+}
+.imagen {
+  position: relative;
+  min-height: 100dvh;
+  display: grid;
+  place-items: center;
+  background-image: url("../images/space-and-geodesy-TUM.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* fade al fondo de la página */
+  -webkit-mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
+}
+.imagen::before {
+  content: "";
+  position: absolute;
+  inset: 0; /* ocupa todo el contenedor */
+  background: rgba(0, 0, 0, 0.3); /* color negro con opacidad */
+  z-index: 0;
+}
+.imagen > * {
+  position: relative;
+  z-index: 1; /* el contenido encima del overlay */
+}
 #fondoC {
   background: url("../images/imgDron.JPG") no-repeat center center fixed;
   background-size: cover;
+}
+/* ------------------------ RESPONSIVE ------------------------*/
+@media screen and (max-width: 1300px) {
+  h1.ppal-title {
+    font-size: 8em;
+  }
+  h2 {
+    font-size: 5em;
+  }
+  p {
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 1120px) {
+  #open-sidebar-button,
+  #close-sidebar-button {
+    display: block;
+  }
+  main {
+    margin-top: 0;
+  }
+  h1.ppal-title {
+    font-size: 9em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  p {
+    font-size: 2.5em;
+    text-align: justify;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+  }
+  nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100dvh;
+    width: min(15em, 100%);
+    z-index: 10;
+    transition: right 300ms ease-out;
+    border-bottom: 0;
+  }
+  nav.show {
+    right: 0;
+  }
+  nav ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+  }
+  nav a {
+    width: 100%;
+    padding: 1em 2em;
+  }
+  nav .home-link {
+    margin-right: unset;
+    display: none;
+  }
+  .sidebar-button {
+    width: 100%;
+    background-color: var(--second-color);
+  }
+  .main-text {
+    margin-top: 2.5em;
+  }
+  .imagen {
+    min-height: 80vh;
+    background-position: center top;
+  }
+}
+@media screen and (max-width: 600px) {
+  .main-text {
+    margin: 2em;
+  }
+  h1.ppal-title {
+    font-size: 4.25em;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  p {
+    font-size: 1.5em;
+  }
+  nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    transition: right 300ms ease-out;
+  }
+  nav.show {
+    right: 0;
+  }
+  nav ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+  }
+  nav a {
+    width: 100%;
+    padding: 1em 2em;
+  }
+  nav .home-link {
+    margin-right: unset;
+    display: none;
+  }
+  .imagen {
+    min-height: 60vh;
+    background-position: center top;
+  }
+  .satelital {
+    margin-top: 2em;
+  }
+  .geofisica {
+    margin-top: 2em;
+  }
+  .gestion-riesgo {
+    margin-top: 2em;
+  }
 }
