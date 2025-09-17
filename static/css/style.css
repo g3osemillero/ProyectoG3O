@@ -98,23 +98,18 @@ button .material-icons {
   padding: 1em;
   cursor: pointer;
 }
-/* --------------------- BODY -----------------------------*/
+/* --------------------- MAIN PAGE -----------------------------*/
 .main-text {
   color: var(--third-color);
   margin: 4em 8em;
 }
-h1.ppal-title {
+.ppal-title {
   font-size: 12em;
   font-family: "Righteous";
   text-align: center;
   color: var(--third-color);
 }
-h1 {
-  font-size: 10em;
-  font-family: "Righteous";
-  text-align: center;
-}
-h2 {
+.subtitulos-main {
   text-align: right;
   font-size: 5em;
   font-family: "Righteous";
@@ -129,12 +124,16 @@ p {
   font-size: 2em;
   line-height: 1.5;
   margin-top: 1.2em;
+  margin-bottom: 1.2em;
+  color: var(--third-color);
 }
 .satelital {
   margin-top: 3em;
+  border-bottom: 4px solid var(--sixth-color);
 }
 .geofisica {
   margin-top: 3em;
+  border-bottom: 4px solid var(--sixth-color);
 }
 .gestion-riesgo {
   margin-top: 3em;
@@ -165,6 +164,7 @@ p {
 }
 .secInicial {
   line-height: 1.6;
+  border-bottom: 4px solid var(--sixth-color);
 }
 .imgGrupal {
   float: right;
@@ -178,6 +178,49 @@ p {
   content: "";
   display: table;
   clear: both;
+}
+/* --------------------- LINKS PAGE -----------------------------*/
+.main-links {
+  margin: 9em 12em;
+}
+.links-title {
+  font-size: 8em;
+  font-family: "Righteous";
+  text-align: center;
+  margin-top: 0.5em;
+  color: var(--third-color);
+}
+.links-subt {
+  font-size: 4em;
+  font-family: "Righteous";
+  margin-top: 1.2em;
+  text-align: center;
+  color: var(--third-color);
+  text-decoration: underline; /* activa subrayado */
+  text-decoration-color: var(--fourth-color); /* color del subrayado */
+  text-decoration-thickness: 4px; /* grosor */
+  text-underline-offset: 4px;
+}
+section {
+  border-bottom: 4px solid var(--sixth-color);
+}
+.btn-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 1.2em;
+}
+.btn {
+  display: inline-block;
+  padding: 1em 2em;
+  font-size: 1.2em;
+  font-family: "Outfit";
+  text-decoration: none; /* quita el subrayado */
+  color: var(--third-color);
+  border-radius: 1em;
+  border: 2px solid var(#000000);
+  transition: background 0.2s ease, transform 0.1s ease;
 }
 /* --------------------------- FOOTER ---------------------------------*/
 footer {
@@ -216,17 +259,6 @@ footer .footer-nav a {
   background-size: cover;
 }
 /* ------------------------ RESPONSIVE ------------------------*/
-@media screen and (max-width: 1300px) {
-  h1.ppal-title {
-    font-size: 8em;
-  }
-  h2 {
-    font-size: 5em;
-  }
-  p {
-    font-size: 2em;
-  }
-}
 @media screen and (max-width: 1120px) {
   #open-sidebar-button,
   #close-sidebar-button {
@@ -235,7 +267,7 @@ footer .footer-nav a {
   h1.ppal-title {
     font-size: 9em;
   }
-  h2 {
+  .subtitulos-main {
     font-size: 2.5em;
   }
   p {
@@ -292,6 +324,12 @@ footer .footer-nav a {
     max-width: 560px; /* opcional: tope */
     margin: 1rem auto 0; /* centrada */
   }
+  .main-links {
+    margin: 3em;
+  }
+  .links-title {
+    font-size: 6em;
+  }
   footer .txt-footer {
     text-align: center;
     font-size: 0.9em;
@@ -316,7 +354,7 @@ footer .footer-nav a {
   h1.ppal-title {
     font-size: 4.25em;
   }
-  h2 {
+  .subtitulos-main {
     font-size: 2em;
   }
   p {
@@ -361,6 +399,12 @@ footer .footer-nav a {
   }
   .gestion-riesgo {
     margin-top: 2em;
+  }
+  .main-links {
+    margin: 2em;
+  }
+  .links-title {
+    font-size: 4em;
   }
   footer .txt-footer {
     text-align: center;
