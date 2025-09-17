@@ -13,6 +13,7 @@
   --seventh-color: #aaa;
   --eigth-color: #666;
   --nineth-color: #eee;
+  --tenth-color: #222;
   --tile: 50px; /* opcional, matchea con TILE_SIZE del JS */
   --fade: 96px; /* si usas el mask */
 }
@@ -28,7 +29,7 @@ body {
 }
 
 /* ---------------------- BARRA DE NAVEGACIÓN ------------------------ */
-nav {
+.main-nav {
   position: fixed;
   top: 0;
   width: 100%;
@@ -36,7 +37,7 @@ nav {
   border-bottom: 4px solid var(--fifth-color);
   background-color: var(--second-color);
 }
-nav ul {
+.main-nav ul {
   list-style: none;
   display: flex;
   align-items: center;
@@ -44,16 +45,16 @@ nav ul {
   padding: 0;
   font-family: "Outfit";
 }
-nav li {
+.main-nav li {
   display: flex;
   align-items: center;
 }
-nav .home-link {
+.main-nav .home-link {
   display: inline-block;
   line-height: 1.1;
   margin-right: auto;
 }
-nav a {
+.main-nav a {
   display: inline-flex;
   align-items: center;
   text-decoration: none;
@@ -62,19 +63,19 @@ nav a {
   transition: opacity 150ms ease;
   font-size: 1.25em;
 }
-nav:hover a {
+.main-nav:hover a {
   opacity: 0.5;
 }
-nav a:hover {
+.main-nav a:hover {
   opacity: 1;
 }
-nav .home-link a {
+.main-nav .home-link a {
   opacity: 1 !important;
   pointer-events: none;
   cursor: default;
   align-items: center;
 }
-nav .material-icons {
+.main-nav .material-icons {
   font-size: 48px;
   color: var(--third-color);
 }
@@ -100,7 +101,7 @@ button .material-icons {
 /* --------------------- BODY -----------------------------*/
 .main-text {
   color: var(--third-color);
-  margin: 8em;
+  margin: 4em 8em;
 }
 h1.ppal-title {
   font-size: 12em;
@@ -127,16 +128,16 @@ p {
   font-family: "Outfit";
   font-size: 2em;
   line-height: 1.5;
-  margin-bottom: 1.2em;
+  margin-top: 1.2em;
 }
 .satelital {
-  margin-top: 4em;
+  margin-top: 3em;
 }
 .geofisica {
-  margin-top: 4em;
+  margin-top: 3em;
 }
 .gestion-riesgo {
-  margin-top: 4em;
+  margin-top: 3em;
 }
 .imagen {
   position: relative;
@@ -162,6 +163,54 @@ p {
   position: relative;
   z-index: 1; /* el contenido encima del overlay */
 }
+.secInicial {
+  line-height: 1.6;
+}
+.imgGrupal {
+  float: right;
+  width: min(39vw, 60em);
+  height: auto;
+  margin: 0 0 1rem 1.25rem;
+  border-radius: 1em;
+  border: 4px solid var(--fifth-color);
+}
+.secInicial::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* --------------------------- FOOTER ---------------------------------*/
+footer {
+  background-color: var(--tenth-color);
+  color: var(--nineth-color);
+  padding-bottom: 1.2em;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  border-top: 4px solid var(--fifth-color);
+}
+footer .txt-footer {
+  font-size: 1.2em;
+  line-height: 0.5;
+}
+footer .disFinal {
+  color: var(--eigth-color);
+  font-size: 0.9em;
+}
+footer .footer-nav {
+  display: flex;
+  justify-content: center;
+}
+footer .footer-nav ul {
+  display: flex;
+  list-style: none;
+  padding-top: 2em;
+}
+footer .footer-nav a {
+  text-decoration: none;
+  margin: 1em;
+  font-size: 1em;
+  color: var(--eigth-color);
+}
 #fondoC {
   background: url("../images/imgDron.JPG") no-repeat center center fixed;
   background-size: cover;
@@ -183,23 +232,20 @@ p {
   #close-sidebar-button {
     display: block;
   }
-  main {
-    margin-top: 0;
-  }
   h1.ppal-title {
     font-size: 9em;
   }
   h2 {
-    font-size: 1.5em;
+    font-size: 2.5em;
   }
   p {
-    font-size: 2.5em;
+    font-size: 1.5em;
     text-align: justify;
     hyphens: auto;
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
   }
-  nav {
+  .main-nav {
     position: fixed;
     top: 0;
     right: -100%;
@@ -209,21 +255,21 @@ p {
     transition: right 300ms ease-out;
     border-bottom: 0;
   }
-  nav.show {
+  .main-nav.show {
     right: 0;
   }
-  nav ul {
+  .main-nav ul {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin: 0;
   }
-  nav a {
+  .main-nav a {
     width: 100%;
     padding: 1em 2em;
   }
-  nav .home-link {
+  .main-nav .home-link {
     margin-right: unset;
     display: none;
   }
@@ -232,11 +278,35 @@ p {
     background-color: var(--second-color);
   }
   .main-text {
-    margin-top: 2.5em;
+    margin: 2em;
   }
   .imagen {
     min-height: 80vh;
     background-position: center top;
+  }
+  .imgGrupal {
+    float: none; /* deja de flotar */
+    clear: both; /* empieza bajo cualquier float previo */
+    display: block;
+    width: 100%;
+    max-width: 560px; /* opcional: tope */
+    margin: 1rem auto 0; /* centrada */
+  }
+  footer .txt-footer {
+    text-align: center;
+    font-size: 0.9em;
+    line-height: 0.5;
+  }
+  footer .disFinal {
+    text-align: center;
+    font-size: 0.6em;
+  }
+  footer .footer-nav ul {
+    padding-top: 1em;
+  }
+  footer .footer-nav a {
+    margin: 1em;
+    font-size: 0.7em;
   }
 }
 @media screen and (max-width: 600px) {
@@ -252,7 +322,7 @@ p {
   p {
     font-size: 1.5em;
   }
-  nav {
+  .main-nav {
     position: fixed;
     top: 0;
     right: -100%;
@@ -261,21 +331,21 @@ p {
     z-index: 10;
     transition: right 300ms ease-out;
   }
-  nav.show {
+  .main-nav.show {
     right: 0;
   }
-  nav ul {
+  .main-nav ul {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin: 0;
   }
-  nav a {
+  .main-nav a {
     width: 100%;
     padding: 1em 2em;
   }
-  nav .home-link {
+  .main-nav .home-link {
     margin-right: unset;
     display: none;
   }
@@ -291,5 +361,21 @@ p {
   }
   .gestion-riesgo {
     margin-top: 2em;
+  }
+  footer .txt-footer {
+    text-align: center;
+    font-size: 0.6em;
+    line-height: 0.5;
+  }
+  footer .disFinal {
+    text-align: center;
+    font-size: 0.5em;
+  }
+  footer .footer-nav ul {
+    padding-top: 1em;
+  }
+  footer .footer-nav a {
+    margin: 1em;
+    font-size: 0.4em;
   }
 }

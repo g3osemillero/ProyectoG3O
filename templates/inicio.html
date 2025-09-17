@@ -17,7 +17,7 @@
         <i class="material-icons">menu</i>
       </button>
     </div>
-    <nav id="navbar">
+    <nav class="main-nav" id="navbar">
       <ul>
         <li>
           <button id="close-sidebar-button" onclick="closeSidebar()">
@@ -45,7 +45,7 @@
     <main>
       <div class="grid-wrapper">
         <div class="main-text">
-          <section>
+          <section class="secInicial">
             <p>
               El Semillero de Geodesia Satelital, Geofísica y Gestión del Riesgo
               de la Universidad Distrital Francisco José de Caldas es un espacio
@@ -54,13 +54,13 @@
               métodos geofísicos y la gestión del riesgo, fortaleciendo la
               formación académica y científica de los estudiantes.
             </p>
+            <img class="imgGrupal" src="../static/images/imgSemilleroGeo.jpg" />
             <p>
               En los últimos años, hemos logrado avances significativos, como la
               vinculación de miembros a la sección de Geodesia del Instituto
               Geográfico Agustín Codazzi, consolidando al semillero como un
               espacio de oportunidades y conexión académica.
             </p>
-            <img src="" alt="" />
             <p>
               Promovemos el trabajo interdisciplinario, el desarrollo de
               habilidades técnicas, la participación en eventos, publicaciones y
@@ -129,6 +129,27 @@
         </div>
       </div>
     </main>
+    <footer>
+      <p class="txt-footer">
+        &copy; 2025 Semillero Geodesia Satelital, Geofísica y Gestión del
+        Riesgo.
+      </p>
+      <p class="txt-footer">Todos los derechos reservados.</p>
+      <nav class="footer-nav">
+        <ul>
+          <li>
+            <a href="../templates/icg.html">Ingeniería Catastral y Geodesia</a>
+          </li>
+          <li><a style="cursor: default; pointer-events: none">|</a></li>
+          <li>
+            <a href="#">Normas y Estatuto</a>
+          </li>
+        </ul>
+      </nav>
+      <p class="disFinal">
+        Diseñado con ❤️ por Alejandra Arango, Mariana Arango y Samuel Calderon
+      </p>
+    </footer>
     <script src="../static/js/scrollFirstPage.js"></script>
     <script src="../static/js/navbar.js"></script>
     <script src="../static/js/grid.js"></script>
