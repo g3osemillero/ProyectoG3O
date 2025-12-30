@@ -127,6 +127,15 @@ p {
   margin-bottom: 1.2em;
   color: var(--third-color);
 }
+.txt-relleno {
+  font-family: "Outfit";
+  font-size: 2em;
+  line-height: 1.5;
+  margin-top: 1.2em;
+  margin-bottom: 1.2em;
+  color: var(--third-color);
+  text-align: justify;
+}
 .satelital {
   margin-top: 3em;
   border-bottom: 4px solid var(--sixth-color);
@@ -178,6 +187,89 @@ p {
   content: "";
   display: table;
   clear: both;
+}
+/* --------------------- LINKS PAGE -----------------------------*/
+.main-pubs {
+  margin: 8em 9em 5em 9em;
+}
+.subt-pubs {
+  text-align: center;
+  font-size: 5em;
+  font-family: "Righteous";
+  text-decoration: underline; /* activa subrayado */
+  text-decoration-color: var(--fourth-color); /* color del subrayado */
+  text-decoration-thickness: 4px; /* grosor */
+  text-underline-offset: 4px;
+  margin-bottom: 0.5em;
+  color: var(--nineth-color);
+}
+.lista-pdfs {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.pdf-item {
+  border-left: 5px solid var(--fifth-color);
+  padding: 1rem 1.2rem;
+  margin-bottom: 1.2rem;
+  transition: background-color 0.25s ease, transform 0.2s ease;
+}
+.pdf-item:hover {
+  background-color: var(--third-color);
+}
+.pdf-item:hover .pdf-titulo {
+  color: var(--tenth-color);
+}
+.pdf-titulo {
+  font-family: "Outfit";
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--nineth-color);
+  text-decoration: none;
+}
+.pdf-meta {
+  margin-top: 0.3rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  font-size: 1rem;
+}
+.pdf-autores {
+  color: var(--nineth-color);
+}
+.pdf-item:hover .pdf-autores {
+  color: var(--tenth-color);
+}
+.pdf-tipo {
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  font-weight: 500;
+  color: #fff;
+}
+.pdf-tipo.libro {
+  background-color: #b9c142;
+}
+.pdf-tipo.manual {
+  background-color: #0d6efd;
+}
+.pdf-tipo.articulo {
+  background-color: #198754;
+}
+.pdf-tipo.presentacion {
+  background-color: #72007b;
+}
+.pdf-estado {
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  font-weight: 500;
+}
+.pdf-estado.terminado {
+  background-color: #d1e7dd;
+  color: #0f5132;
+}
+.pdf-estado.proceso {
+  background-color: #fff3cd;
+  color: #664d03;
 }
 /* --------------------- LINKS PAGE -----------------------------*/
 .main-links {
@@ -325,6 +417,9 @@ footer .footer-nav a {
     margin: 1rem auto 0; /* centrada */
   }
   .main-links {
+    margin: 3em;
+  }
+  .main-pubs {
     margin: 3em;
   }
   .links-title {
