@@ -1,190 +1,203 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../static/css/style.css" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link rel="icon" href="../static/images/G3O.svg" type="image/png" />
-    <title>Links</title>
-  </head>
-  <body>
-    <div class="sidebar-button">
-      <button id="open-sidebar-button" onclick="openSidebar()">
-        <i class="material-icons">menu</i>
-      </button>
-    </div>
-    <nav class="main-nav" id="navbar">
-      <ul>
-        <li>
-          <button id="close-sidebar-button" onclick="closeSidebar()">
-            <i class="material-icons">close</i>
-          </button>
-        </li>
-        <li class="home-link">
-          <a href="#">
-            Geodesia Satelital<br />
-            Geofísica<br />
-            Gestión del Riesgo
-          </a>
-        </li>
-        <li>
-          <a class="active-link" href="../templates/inicio.html">INICIO</a>
-        </li>
-        <li><a href="../templates/pubs.html">PUBLICACIONES</a></li>
-        <li><a href="../templates/links.html">LINKS</a></li>
-        <li><a href="../templates/contact.html">CONTACTO</a></li>
-      </ul>
-    </nav>
-    <main class="main-links">
-      <section>
-        <h1 class="links-title">Software</h1>
-        <h2 class="links-subt">GAMMIT/GLOBK</h2>
-        <p>
-          Dentro del semillero se cuenta con la licencia para el software de
-          procesamiento GAMMIT/GLOBK, el cual permite procesar datos GNSS, VLBI
-          y experimentos SLR. GAMMIT/GLOBK fue desarrollado en Massachusetts
-          Institute of Technology (MIT) bajo la dirección del Dr. Robert W.
-          King. Para solicitar la licencia de este software se debe hablar
-          directamente con el profesor Andrés Cárdenas Contreras.
-        </p>
-        <div class="btn-cont">
-          <a class="btn bg-[#800000]" href="" target="_blank"
-            >Web Page Gammit/Globk</a
-          >
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../static/css/style.css" />
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet"
+        />
+        <link rel="icon" href="../static/images/G3O.svg" type="image/png" />
+        <title>Links</title>
+    </head>
+    <body>
+        <div class="sidebar-button">
+            <button id="open-sidebar-button" onclick="openSidebar()">
+                <i class="material-icons">menu</i>
+            </button>
         </div>
-      </section>
-      <section>
-        <h2 class="links-subt">GPSTk</h2>
-        <p>
-          GPS Toolkit es un software desarrollado por la Universidad de Texas.
-          Su ideal era ser una libreria de C++ abierta a todo el público para el
-          procesamiento de datos GNSS, sin embargo como se menciona en su
-          repositorio oficial la libreria actualmente se encuenta en desuso, por
-          tal motivo se lista el links a las librerias que recomienda el autor
-          para su uso.
-        </p>
-        <div class="btn-cont">
-          <a
-            class="btn bg-[#6b8e23]"
-            href="https://gitlab.com/sgl-ut/gnsstk"
-            target="_blank"
-            >GNSSTk (Libreria)</a
-          >
-          <a
-            class="btn bg-[#b66e3c]"
-            href="https://gitlab.com/sgl-ut/gnsstk-apps"
-            target="_blank"
-            >GNSSTk (Aplicaciones)</a
-          >
-        </div>
-      </section>
-      <section>
-        <h2 class="links-subt">gLAB</h2>
-        <p>
-          gLAB es un software desarrollado por el grupo de Astronomia y
-          Geomatica (gAGE) de la Universidad Politecnica de Cataluña (UPC) para
-          la Agencia Espacial Europea (ESA), este software permite realizar
-          modelos precisos de Observaciones GNSS.
-        </p>
-        <div class="btn-cont">
-          <a
-            class="btn bg-[#a47148]"
-            href="https://gage.upc.edu/en/learning-materials/software-tools/glab-tool-suite"
-            target="_blank"
-          >
-            Web Page gLAB
-          </a>
-          <a
-            class="btn"
-            href="https://gage.upc.edu/en/learning-materials/software-tools/glab-tool-suite-links/glab-download"
-            target="_blank"
-          >
-            Links de Descarga gLAB
-          </a>
-        </div>
-      </section>
-      <section>
-        <h1 class="links-title">Entidades Relacionadas</h1>
-        <p>
-          Se listan acontinuación entidades relacionadas a la Geodesia
-          Satelital, Geofísica y Gestión del Riesgo
-        </p>
-        <section>
-          <div>
-            <!-- Tarjeta 1 -->
-            <a href="https://www.udistrital.edu.co/inicio" target="_blank">
-              <div>
-                <img
-                  src="../static/images/Escudo_UD.svg.png"
-                  alt="Universidad Distrital"
-                />
-                <h3>Universidad Distrital</h3>
-                <p>Facultad de Ingeniería</p>
-              </div>
-            </a>
+        <nav class="main-nav" id="navbar">
+            <ul>
+                <li>
+                    <button id="close-sidebar-button" onclick="closeSidebar()">
+                        <i class="material-icons">close</i>
+                    </button>
+                </li>
+                <li class="home-link">
+                    <a href="#">
+                        Geodesia Satelital<br />
+                        Geofísica<br />
+                        Gestión del Riesgo
+                    </a>
+                </li>
+                <li>
+                    <a class="active-link" href="../templates/index.html"
+                        >INICIO</a
+                    >
+                </li>
+                <li><a href="../templates/pubs.html">PUBLICACIONES</a></li>
+                <li><a href="#">LINKS</a></li>
+                <li><a href="#">CONTACTO</a></li>
+            </ul>
+        </nav>
+        <main class="main-links">
+            <section>
+                <h1 class="links-title">Software</h1>
+                <h2 class="links-subt">GAMMIT/GLOBK</h2>
+                <p>
+                    Dentro del semillero se cuenta con la licencia para el
+                    software de procesamiento GAMMIT/GLOBK, el cual permite
+                    procesar datos GNSS, VLBI y experimentos SLR. GAMMIT/GLOBK
+                    fue desarrollado en Massachusetts Institute of Technology
+                    (MIT) bajo la dirección del Dr. Robert W. King. Para
+                    solicitar la licencia de este software se debe hablar
+                    directamente con el profesor Andrés Cárdenas Contreras.
+                </p>
+                <div class="btn-cont">
+                    <a class="btn bg-[#800000]" href="" target="_blank"
+                        >Web Page Gammit/Globk</a
+                    >
+                </div>
+            </section>
+            <section>
+                <h2 class="links-subt">GPSTk</h2>
+                <p>
+                    GPS Toolkit es un software desarrollado por la Universidad
+                    de Texas. Su ideal era ser una libreria de C++ abierta a
+                    todo el público para el procesamiento de datos GNSS, sin
+                    embargo como se menciona en su repositorio oficial la
+                    libreria actualmente se encuenta en desuso, por tal motivo
+                    se lista el links a las librerias que recomienda el autor
+                    para su uso.
+                </p>
+                <div class="btn-cont">
+                    <a
+                        class="btn bg-[#6b8e23]"
+                        href="https://gitlab.com/sgl-ut/gnsstk"
+                        target="_blank"
+                        >GNSSTk (Libreria)</a
+                    >
+                    <a
+                        class="btn bg-[#b66e3c]"
+                        href="https://gitlab.com/sgl-ut/gnsstk-apps"
+                        target="_blank"
+                        >GNSSTk (Aplicaciones)</a
+                    >
+                </div>
+            </section>
+            <section>
+                <h2 class="links-subt">gLAB</h2>
+                <p>
+                    gLAB es un software desarrollado por el grupo de Astronomia
+                    y Geomatica (gAGE) de la Universidad Politecnica de Cataluña
+                    (UPC) para la Agencia Espacial Europea (ESA), este software
+                    permite realizar modelos precisos de Observaciones GNSS.
+                </p>
+                <div class="btn-cont">
+                    <a
+                        class="btn bg-[#a47148]"
+                        href="https://gage.upc.edu/en/learning-materials/software-tools/glab-tool-suite"
+                        target="_blank"
+                    >
+                        Web Page gLAB
+                    </a>
+                    <a
+                        class="btn"
+                        href="https://gage.upc.edu/en/learning-materials/software-tools/glab-tool-suite-links/glab-download"
+                        target="_blank"
+                    >
+                        Links de Descarga gLAB
+                    </a>
+                </div>
+            </section>
+            <section>
+                <h1 class="links-title">Entidades Relacionadas</h1>
+                <p>
+                    Se listan acontinuación entidades relacionadas a la Geodesia
+                    Satelital, Geofísica y Gestión del Riesgo
+                </p>
+                <section>
+                    <div>
+                        <!-- Tarjeta 1 -->
+                        <a
+                            href="https://www.udistrital.edu.co/inicio"
+                            target="_blank"
+                        >
+                            <div>
+                                <img
+                                    src="../static/images/Escudo_UD.svg.png"
+                                    alt="Universidad Distrital"
+                                />
+                                <h3>Universidad Distrital</h3>
+                                <p>Facultad de Ingeniería</p>
+                            </div>
+                        </a>
 
-            <!-- Tarjeta 2 -->
-            <a href="https://www.unavco.org/" target="_blank">
-              <div>
-                <img
-                  src="../static/images/UNAVCO-Logo-Red-BlkShadow_TM1000-1-removebg-preview.png"
-                  alt="UNAVCO"
-                />
-                <h3>UNAVCO</h3>
-                <p>University NAVSTAR Consortium</p>
-              </div>
-            </a>
+                        <!-- Tarjeta 2 -->
+                        <a href="https://www.unavco.org/" target="_blank">
+                            <div>
+                                <img
+                                    src="../static/images/UNAVCO-Logo-Red-BlkShadow_TM1000-1-removebg-preview.png"
+                                    alt="UNAVCO"
+                                />
+                                <h3>UNAVCO</h3>
+                                <p>University NAVSTAR Consortium</p>
+                            </div>
+                        </a>
 
-            <!-- Tarjeta 3 -->
-            <a href="https://www.igac.gov.co/" target="_blank">
-              <div>
-                <img
-                  src="../static/images/logo-igac-colorhorizontal.png"
-                  alt="IGAC"
-                />
-                <h3>IGAC</h3>
-                <p>Instituto Geográfico Agustín Codazzi</p>
-              </div>
-            </a>
+                        <!-- Tarjeta 3 -->
+                        <a href="https://www.igac.gov.co/" target="_blank">
+                            <div>
+                                <img
+                                    src="../static/images/logo-igac-colorhorizontal.png"
+                                    alt="IGAC"
+                                />
+                                <h3>IGAC</h3>
+                                <p>Instituto Geográfico Agustín Codazzi</p>
+                            </div>
+                        </a>
 
-            <!-- Tarjeta 3 -->
-            <a href="https://www.esa.int/" target="_blank">
-              <div>
-                <img src="../static/images/ESA_logo.svg.png" alt="ESA" />
-                <h3>ESA</h3>
-                <p>European Spatial Agency</p>
-              </div>
-            </a>
-          </div>
-        </section>
-      </section>
-    </main>
-    <footer>
-      <p class="txt-footer">
-        &copy; 2025 Semillero Geodesia Satelital, Geofísica y Gestión del
-        Riesgo.
-      </p>
-      <p class="txt-footer">Todos los derechos reservados.</p>
-      <nav class="footer-nav">
-        <ul>
-          <li>
-            <a href="../templates/icg.html">Ingeniería Catastral y Geodesia</a>
-          </li>
-          <li><a style="cursor: default; pointer-events: none">|</a></li>
-          <li>
-            <a href="#">Normas y Estatuto</a>
-          </li>
-        </ul>
-      </nav>
-      <p class="disFinal">
-        Diseñado con ❤️ por Alejandra Arango, Mariana Arango y Samuel Calderon
-      </p>
-    </footer>
-    <script src="../static/js/navbar.js"></script>
-  </body>
+                        <!-- Tarjeta 3 -->
+                        <a href="https://www.esa.int/" target="_blank">
+                            <div>
+                                <img
+                                    src="../static/images/ESA_logo.svg.png"
+                                    alt="ESA"
+                                />
+                                <h3>ESA</h3>
+                                <p>European Spatial Agency</p>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+            </section>
+        </main>
+        <footer>
+            <p class="txt-footer">
+                &copy; 2025 Semillero Geodesia Satelital, Geofísica y Gestión
+                del Riesgo.
+            </p>
+            <p class="txt-footer">Todos los derechos reservados.</p>
+            <nav class="footer-nav">
+                <ul>
+                    <li>
+                        <a href="#">Ingeniería Catastral y Geodesia</a>
+                    </li>
+                    <li>
+                        <a style="cursor: default; pointer-events: none">|</a>
+                    </li>
+                    <li>
+                        <a href="#">Normas y Estatuto</a>
+                    </li>
+                </ul>
+            </nav>
+            <p class="disFinal">
+                Diseñado con ❤️ por Alejandra Arango, Mariana Arango y Samuel
+                Calderon
+            </p>
+        </footer>
+        <script src="../static/js/navbar.js"></script>
+    </body>
 </html>

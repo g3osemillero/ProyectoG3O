@@ -1,145 +1,172 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../static/css/style.css" />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link rel="icon" href="../static/images/G3O.svg" type="image/png" />
-    <title>Ingeniería Catastral y Geodesia</title>
-  </head>
-  <body>
-    <div class="sidebar-button">
-      <button id="open-sidebar-button" onclick="openSidebar()">
-        <i class="material-icons">menu</i>
-      </button>
-    </div>
-    <nav class="main-nav" id="navbar">
-      <ul>
-        <li>
-          <button id="close-sidebar-button" onclick="closeSidebar()">
-            <i class="material-icons">close</i>
-          </button>
-        </li>
-        <li class="home-link">
-          <a href="#">
-            Geodesia Satelital<br />
-            Geofísica<br />
-            Gestión del Riesgo
-          </a>
-        </li>
-        <li>
-          <a class="active-link" href="../templates/inicio.html">INICIO</a>
-        </li>
-        <li><a href="../templates/pubs.html">PUBLICACIONES</a></li>
-        <li><a href="../templates/links.html">LINKS</a></li>
-        <li><a href="../templates/contact.html">CONTACTO</a></li>
-      </ul>
-    </nav>
-    <div id="contendor-ppal" class="h-full">
-      <!-- Contenido principal -->
-      <div
-        id="container-texto"
-        class="flex-1 bg-[#2F3131] border-b-10 border-[#800000]"
-      >
-        <div class="bg-[#426E86] p-15 border-b-10 border-[#800000]">
-          <p
-            id="titulo-inicio"
-            class="text-8xl text-center text-[#F8F1E5] underline decoration-[#F9BA32] font-bold pt-10"
-          >
-            Ingeniería Catastral y Geodesia
-          </p>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../static/css/style.css" />
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet"
+        />
+        <link rel="icon" href="../static/images/G3O.svg" type="image/png" />
+        <title>Ingeniería Catastral y Geodesia</title>
+    </head>
+    <body>
+        <div class="sidebar-button">
+            <button id="open-sidebar-button" onclick="openSidebar()">
+                <i class="material-icons">menu</i>
+            </button>
         </div>
-        <div class="container mx-auto px-8">
-          <section
-            id="IngCatastralGeodesia"
-            class="mb-15 border-b-10 border-[#800000]"
-          >
-            <h2
-              id="que-es"
-              class="text-6xl font-bold mt-15 text-right text-[#F8F1E5]"
+        <nav class="main-nav" id="navbar">
+            <ul>
+                <li>
+                    <button id="close-sidebar-button" onclick="closeSidebar()">
+                        <i class="material-icons">close</i>
+                    </button>
+                </li>
+                <li class="home-link">
+                    <a href="#">
+                        Geodesia Satelital<br />
+                        Geofísica<br />
+                        Gestión del Riesgo
+                    </a>
+                </li>
+                <li>
+                    <a class="active-link" href="../templates/index.html"
+                        >INICIO</a
+                    >
+                </li>
+                <li><a href="../templates/pubs.html">PUBLICACIONES</a></li>
+                <li><a href="#">LINKS</a></li>
+                <li><a href="#">CONTACTO</a></li>
+            </ul>
+        </nav>
+        <div id="contendor-ppal" class="h-full">
+            <!-- Contenido principal -->
+            <div
+                id="container-texto"
+                class="flex-1 bg-[#2F3131] border-b-10 border-[#800000]"
             >
-              ¿Qué es?
-            </h2>
-            <p class="text-3xl pb-20 mt-15 text-right text-[#F8F1E5]">
-              El programa curricular de Ingeniería Catastral y Geodesia al cual
-              se encuentra adjunto el semillero de Geodesia Satelital, Geofísica
-              y Gestión del Riesgo; es un programa académico de la Universidad
-              Distrital Francisco José de Caldas, ofertado desde hace más de 50
-              años en la ciudad de Bogotá, Colombia. El programa se ha planteado
-              la siguiente misión y visión con el fin de brindarle a sus
-              estudiantes y egresados la calidad administrativa necesaria para
-              mantener los objetivos por los cuales se fundo la carrera.
-            </p>
-          </section>
-          <section id="Mision" class="mb-15 border-b-10 border-[#800000]">
-            <h2 class="text-6xl font-bold text-[#F8F1E5]">Misión</h2>
-            <p class="text-3xl mt-15 text-[#F8F1E5]">
-              La misión del proyecto curricular de Ingeniería Catastral y
-              Geodesia es ofrecer espacios académicos para la formación integral
-              de ingenieros propositivos y socialmente comprometidos, con
-              espíritu crítico, pensamiento analítico, global y de carácter
-              argumentativo; competentes para la generación, administración y
-              gestión de información geográfica orientada principalmente al
-              conocimiento del territorio; su planificación y gestión con
-              criterios de equidad, sostenibilidad, valiéndose de técnicas y
-              geotecnologías de vanguardia.
-            </p>
-            <p class="text-3xl mt-15 pb-20 text-[#F8F1E5]">
-              Esta formación profesional, reconocida social e institucionalmente
-              por su calidad, extiende las oportunidades de acceso a la
-              educación superior pública; al mismo tiempo, procura generar
-              respuestas y soluciones acordes a las bases y principios del
-              catastro, la geodesia, la geomática e inteligencia territorial,
-              orientada a entidades públicas y privadas de los órdenes, local,
-              regional y nacional, mediante la investigación, la extensión de
-              sus servicios académicos y el alto desempeño de sus graduados.
-            </p>
-          </section>
-          <section id="vision" class="mb-">
-            <h2 class="text-6xl font-bold mb-2 text-right text-[#F8F1E5]">
-              Visión
-            </h2>
-            <p class="text-3xl mt-15 pb-20 text-right text-[#F8F1E5]">
-              La visión del programa de Ingeniería Catastral y Geodesia indica
-              lo siguiente: En los próximos 10 años el proyecto curricular de
-              Ingeniería Catastral y Geodesia será reconocido a nivel nacional e
-              internacional, como una de las comunidades académico-científicas y
-              profesionales de la ingeniería colombiana, de mayor compromiso
-              social y territorial; desde sus prácticas académicas,
-              profesionales e investigativas; sus innovaciones en catastro,
-              avalúos, geodesia, geomática, geofísica y su participación en
-              procesos y proyectos de gestión de información espacial y
-              planificación del territorio.
-            </p>
-          </section>
+                <div class="bg-[#426E86] p-15 border-b-10 border-[#800000]">
+                    <p
+                        id="titulo-inicio"
+                        class="text-8xl text-center text-[#F8F1E5] underline decoration-[#F9BA32] font-bold pt-10"
+                    >
+                        Ingeniería Catastral y Geodesia
+                    </p>
+                </div>
+                <div class="container mx-auto px-8">
+                    <section
+                        id="IngCatastralGeodesia"
+                        class="mb-15 border-b-10 border-[#800000]"
+                    >
+                        <h2
+                            id="que-es"
+                            class="text-6xl font-bold mt-15 text-right text-[#F8F1E5]"
+                        >
+                            ¿Qué es?
+                        </h2>
+                        <p
+                            class="text-3xl pb-20 mt-15 text-right text-[#F8F1E5]"
+                        >
+                            El programa curricular de Ingeniería Catastral y
+                            Geodesia al cual se encuentra adjunto el semillero
+                            de Geodesia Satelital, Geofísica y Gestión del
+                            Riesgo; es un programa académico de la Universidad
+                            Distrital Francisco José de Caldas, ofertado desde
+                            hace más de 50 años en la ciudad de Bogotá,
+                            Colombia. El programa se ha planteado la siguiente
+                            misión y visión con el fin de brindarle a sus
+                            estudiantes y egresados la calidad administrativa
+                            necesaria para mantener los objetivos por los cuales
+                            se fundo la carrera.
+                        </p>
+                    </section>
+                    <section
+                        id="Mision"
+                        class="mb-15 border-b-10 border-[#800000]"
+                    >
+                        <h2 class="text-6xl font-bold text-[#F8F1E5]">
+                            Misión
+                        </h2>
+                        <p class="text-3xl mt-15 text-[#F8F1E5]">
+                            La misión del proyecto curricular de Ingeniería
+                            Catastral y Geodesia es ofrecer espacios académicos
+                            para la formación integral de ingenieros
+                            propositivos y socialmente comprometidos, con
+                            espíritu crítico, pensamiento analítico, global y de
+                            carácter argumentativo; competentes para la
+                            generación, administración y gestión de información
+                            geográfica orientada principalmente al conocimiento
+                            del territorio; su planificación y gestión con
+                            criterios de equidad, sostenibilidad, valiéndose de
+                            técnicas y geotecnologías de vanguardia.
+                        </p>
+                        <p class="text-3xl mt-15 pb-20 text-[#F8F1E5]">
+                            Esta formación profesional, reconocida social e
+                            institucionalmente por su calidad, extiende las
+                            oportunidades de acceso a la educación superior
+                            pública; al mismo tiempo, procura generar respuestas
+                            y soluciones acordes a las bases y principios del
+                            catastro, la geodesia, la geomática e inteligencia
+                            territorial, orientada a entidades públicas y
+                            privadas de los órdenes, local, regional y nacional,
+                            mediante la investigación, la extensión de sus
+                            servicios académicos y el alto desempeño de sus
+                            graduados.
+                        </p>
+                    </section>
+                    <section id="vision" class="mb-">
+                        <h2
+                            class="text-6xl font-bold mb-2 text-right text-[#F8F1E5]"
+                        >
+                            Visión
+                        </h2>
+                        <p
+                            class="text-3xl mt-15 pb-20 text-right text-[#F8F1E5]"
+                        >
+                            La visión del programa de Ingeniería Catastral y
+                            Geodesia indica lo siguiente: En los próximos 10
+                            años el proyecto curricular de Ingeniería Catastral
+                            y Geodesia será reconocido a nivel nacional e
+                            internacional, como una de las comunidades
+                            académico-científicas y profesionales de la
+                            ingeniería colombiana, de mayor compromiso social y
+                            territorial; desde sus prácticas académicas,
+                            profesionales e investigativas; sus innovaciones en
+                            catastro, avalúos, geodesia, geomática, geofísica y
+                            su participación en procesos y proyectos de gestión
+                            de información espacial y planificación del
+                            territorio.
+                        </p>
+                    </section>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <footer>
-      <p class="txt-footer">
-        &copy; 2025 Semillero Geodesia Satelital, Geofísica y Gestión del
-        Riesgo.
-      </p>
-      <p class="txt-footer">Todos los derechos reservados.</p>
-      <nav class="footer-nav">
-        <ul>
-          <li>
-            <a href="../templates/icg.html">Ingeniería Catastral y Geodesia</a>
-          </li>
-          <li><a style="cursor: default; pointer-events: none">|</a></li>
-          <li>
-            <a href="#">Normas y Estatuto</a>
-          </li>
-        </ul>
-      </nav>
-      <p class="disFinal">
-        Diseñado con ❤️ por Alejandra Arango, Mariana Arango y Samuel Calderon
-      </p>
-    </footer>
-    <script src="../static/js/navbar.js"></script>
-  </body>
+        <footer>
+            <p class="txt-footer">
+                &copy; 2025 Semillero Geodesia Satelital, Geofísica y Gestión
+                del Riesgo.
+            </p>
+            <p class="txt-footer">Todos los derechos reservados.</p>
+            <nav class="footer-nav">
+                <ul>
+                    <li>
+                        <a href="#">Ingeniería Catastral y Geodesia</a>
+                    </li>
+                    <li>
+                        <a style="cursor: default; pointer-events: none">|</a>
+                    </li>
+                    <li>
+                        <a href="#">Normas y Estatuto</a>
+                    </li>
+                </ul>
+            </nav>
+            <p class="disFinal">
+                Diseñado con ❤️ por Alejandra Arango, Mariana Arango y Samuel
+                Calderon
+            </p>
+        </footer>
+        <script src="../static/js/navbar.js"></script>
+    </body>
 </html>
